@@ -20,7 +20,7 @@ while True:
     while resp != "y" and resp != "n":
         resp = input("Do you want to keep playing? (y/n) ")
         if resp != "y" and resp != "n":
-            print("\n\nIncorrect answer...")
+            print("\nIncorrect answer...")
             continue
     if resp == "n":
         break
@@ -30,7 +30,7 @@ while True:
         compareResults(player1, machine, player_choice, machine_choice)
 
 
-print("******** FINAL SCORE ********")
+print("\n\n******** FINAL SCORE ********")
 print("Your score: {}".format(player1.getScore()))
 print("Machine score: {}".format(machine.getScore()))
 print("*****************************")
@@ -40,6 +40,6 @@ elif player1.getScore() < machine.getScore():
     print("\n>>> YOU LOSE, {} :(".format(player1.name))
 else:
     print("\n>>> IT'S A DRAW")
-c = input("\n\nPush any key...")
+c = input("\n\nPush ENTER key...")
 
     

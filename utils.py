@@ -9,7 +9,7 @@ def playerChoose(player):
         print("1. Rock")
         print("2. Paper")
         print("3. Scissors")
-        choice = input("Your choice: ")
+        choice = input("\nYour choice: ")
 
     player.addChoice(choices_dict[choice])
     return choice
@@ -22,7 +22,7 @@ def machineChoose(machine):
 
 
 def compareResults(player, machine, player_choice, machine_choice):
-    print("******************")
+    print("\n******************")
     print("You chose: {}".format(choices_dict[player_choice]))
     print("Machine chose: {}".format(choices_dict[machine_choice]))
     if player_choice == machine_choice:
