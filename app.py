@@ -33,12 +33,13 @@ while True:
 print("******** FINAL SCORE ********")
 print("Your score: {}".format(player1.getScore()))
 print("Machine score: {}".format(machine.getScore()))
+print("*****************************")
 if player1.getScore() > machine.getScore():
-    print("\nYOU WIN, {}!!!".format(player1.name))
+    print("\n>>> YOU WIN, {}!!!".format(player1.name))
 elif player1.getScore() < machine.getScore():
-    print("\nYOU LOSE, {} :(".format(player1.name))
+    print("\n>>> YOU LOSE, {} :(".format(player1.name))
 else:
-    print("\nIT'S A DRAW")
-c = input("Push any key...")
+    print("\n>>> IT'S A DRAW")
+c = input("\n\nPush any key...")
 
     
